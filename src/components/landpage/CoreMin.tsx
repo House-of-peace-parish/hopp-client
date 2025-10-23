@@ -11,7 +11,7 @@ function CoreMin() {
             {
                 coreMinistries.map((item) => (
                     <div className='flex sm:flex-row flex-col sm:items-center gap-2 shadow-md shadow-slate-700/20 rounded-2xl p-2'>
-                        <div className='w-[200px] h-[180px]'>
+                        <div className='w-full sm:w-[200px] h-[300px] sm:h-[180px]'>
                             <Image className='w-full h-full object-cover rounded-2xl' src={item.image} alt="" />
                         </div>
                         <div>

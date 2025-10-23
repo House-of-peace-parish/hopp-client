@@ -10,14 +10,14 @@ function LandHead() {
             <div className='w-full h-full'>
                 <Image className='h-full w-full object-cover' src={church} alt='' />
             </div>
-            <div className='absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col justify-center md:items-center text-[#F5F5F5] md:px-24 px-6'>
-                <h3 className='text-[2rem] font-semibold'>Welcome to RCCG</h3>
-                <h1 className='text-[6rem] font-bold'>HOUSE OF PEACE PARISH</h1>
+            <div className='absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col justify-center items-center text-[#F5F5F5] md:px-24 px-6 text-center'>
+                <h3 className='text-[1.5rem] sm:text-[2rem] font-semibold'>Welcome to RCCG</h3>
+                <h1 className='text-[2.5rem] sm:text-[4rem] md:text-[6rem] font-bold'>HOUSE OF PEACE PARISH</h1>
                 <p>
                     We are a vibrant parish under The Redeemed Christian Church of God, dedicated to raising Kingdom Stars for global influence through the teaching and application of God’s Word.
                 </p>
-                <Link href=''>
-                    <div className='flex items-center gap-2 mt-8 cursor-pointer bg-[#2E8B57] px-6 py-4 rounded-md hover:bg-[#1E5631] transition'>
+                <Link className='block w-full' href=''>
+                    <div className='flex justify-center items-center gap-2 mt-8 cursor-pointer bg-[#2E8B57] w-full sm:w-[200px] h-[50px] rounded-md hover:bg-[#1E5631] transition'>
                         <p>Join us online</p>
                         <FaArrowRight size={24} />
                     </div>

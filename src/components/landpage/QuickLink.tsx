@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function QuickLink() {
     return (
-        <div className='quicklink-container relative  w-full md:px-24 px-6 py-16 md:py-30 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 bg-cover bg-center bg-no-repeat'>
+        <div className='quicklink-container relative w-full md:px-24 px-6 py-16 md:py-30 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 sm:gap-y-2 lg:gap-0 bg-cover bg-center bg-no-repeat'>
             {
                 quickLinks.map(({ id, title, link, text, icon: Icon }) => (
                     <div key={id} className='flex flex-col items-center text-[#F5F5F5]'>
