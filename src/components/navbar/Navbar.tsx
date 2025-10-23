@@ -61,7 +61,7 @@ function Navbar() {
                 </div>
 
                 {/* Social Icons */}
-                <div className="flex items-center md:gap-6 gap-3 z-30">
+                <div className="flex items-center md:gap-6 gap-3">
                     <Link href="">
                         <FaInstagram className="text-[#F5F5F5]" size={26} />
                     </Link>
