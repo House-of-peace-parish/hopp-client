@@ -12,7 +12,7 @@ function MeetPastor() {
                 {
                     meetPastor.pastors.map((item) => (
                         <div className='w-full sm:w-[350px] h-fit relative rounded-2xl overflow-hidden' key={item.id}>
-                            <div className='w-full h-[500px]'>
+                            <div className='w-full h-[450px] md:h-[500px]'>
                                 <Image className='w-full h-full' src={item.image} alt='' />
                             </div>
                             <div className='absolute top-0 left-0 w-full h-full bg-black/30 text-[#F5F5F5] flex flex-col'>

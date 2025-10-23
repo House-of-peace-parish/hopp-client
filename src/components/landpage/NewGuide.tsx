@@ -16,7 +16,7 @@ function NewGuide() {
                 </Link>
             </div>
             <div className='md:w-[50%] w-full'>
-                <Image style={{ boxShadow: '15px 15px 8px #5A9BD5' }} className='w-full md:w-[800px] h-[550px] object-cover rounded-2xl' src={newGuide.img} alt='' />
+                <Image style={{ boxShadow: '15px 15px 8px #5A9BD5' }} className='w-full md:w-[800px] h-[400px] sm:h-[550px] object-cover rounded-2xl' src={newGuide.img} alt='' />
             </div>
         </div>
     )

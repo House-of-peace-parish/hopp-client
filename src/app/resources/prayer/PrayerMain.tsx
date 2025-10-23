@@ -11,8 +11,8 @@ function PrayerMain() {
             <form action="" className="w-full flex flex-col gap-6 mt-6">
                 <div className="w-full md:w-[650px] md:mx-auto grid gap-4">
                     {/* Name Fields */}
-                    <div className="w-full flex md:flex-row justify-between items-center gap-4">
-                        <div className="form-group flex flex-col gap-2">
+                    <div className='w-full flex sm:flex-row flex-col justify-between items-center gap-4'>
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="firstName">First Name</label>
                             <input
                                 id="firstName"
@@ -22,7 +22,7 @@ function PrayerMain() {
                             />
                         </div>
 
-                        <div className="form-group flex flex-col gap-2">
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="lastName">Last Name</label>
                             <input
                                 id="lastName"
@@ -34,8 +34,8 @@ function PrayerMain() {
                     </div>
 
                     {/* Contact Fields */}
-                    <div className="w-full flex md:flex-row justify-between items-center gap-4">
-                        <div className="form-group flex flex-col gap-2">
+                    <div className='w-full flex sm:flex-row flex-col justify-between items-center gap-4'>
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="email">Email Address</label>
                             <input
                                 id="email"
@@ -45,7 +45,7 @@ function PrayerMain() {
                             />
                         </div>
 
-                        <div className="form-group flex flex-col gap-2">
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="contactAddress">Your Contact Address</label>
                             <input
                                 id="contactAddress"
@@ -57,7 +57,7 @@ function PrayerMain() {
                     </div>
 
                     {/* Message Field */}
-                    <div className="form-group flex flex-col gap-2">
+                    <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                         <label htmlFor="message">Enter your message below</label>
                         <textarea
                             id="message"

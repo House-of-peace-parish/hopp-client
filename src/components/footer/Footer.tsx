@@ -5,18 +5,18 @@ function Footer() {
   return (
     <div className='w-full'>
         <div className='footer-bg relative w-full md:px-24 px-6 py-16'>
-            <div className='flex flex-col items-center w-full'>
+            <div className='flex flex-col text-center items-center w-full'>
                 <h3 className='text-[40px] font-semibold text-[#F5F5F5]'>Subscribe To Our Newsletter</h3>
                 <form action="" className='flex flex-col gap-4 w-full mt-6'>
                     <div className='flex md:flex-row flex-col md:items-center justify-center gap-6'>
                         <input className='w-full sm:w-[300px] h-[40px] bg-[#F5F5F5] text-[#111827] rounded-md p-2'  type="text" placeholder='Enter your Full name' />
                         <input className='w-full sm:w-[300px] h-[40px] bg-[#F5F5F5] text-[#111827] rounded-md p-2' type="email" placeholder='Enter your email address' />
                     </div>
-                    <button className='px-4 py-3 bg-[#2E8B57] rounded-md w-fit mt-6 text-[#F5F5F5] hover:bg-[#1E5631] transition duration-150 flex sm:self-center'>Subscribe</button>
+                    <button className='px-4 py-3 bg-[#2E8B57] rounded-md w-fit mx-auto mt-6 text-[#F5F5F5] hover:bg-[#1E5631] transition duration-150 flex sm:self-center'>Subscribe</button>
                 </form>
             </div>
         </div>
-        <div className='w-full md:px-24 px-6 py-16 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 bg-[#111827]'>
+        <div className='w-full md:px-24 px-6 py-16 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-6 bg-[#111827]'>
             {
                 footerLinks.map(({ id, title, list, icon: Icon, link }) => (
                     <div className='flex flex-col gap-6 text-[#F5F5F5]' key={id}>

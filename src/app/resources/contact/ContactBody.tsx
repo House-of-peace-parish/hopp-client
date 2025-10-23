@@ -10,29 +10,29 @@ function ContactBody() {
 
             <form action="" className='w-full flex flex-col gap-6 mt-6'>
                 <div className='w-full md:w-[650px] md:mx-auto grid gap-4'>
-                    <div className='w-full flex md:flex-row justify-between items-center gap-4'>
-                        <div className="form-group flex flex-col gap-2">
+                    <div className='w-full flex sm:flex-row flex-col justify-between items-center gap-4'>
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="firstName">First Name</label>
                             <input className='w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2' id="firstName" type="text" placeholder="First name" />
                         </div>
 
-                        <div className="form-group flex flex-col gap-2">
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="lastName">Last Name</label>
                             <input className='w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2' id="lastName" type="text" placeholder="Last name" />
                         </div>
                     </div>
-                    <div className='w-full flex md:flex-row justify-between items-center gap-4'>
-                        <div className="form-group flex flex-col gap-2">
+                    <div className='w-full flex sm:flex-row flex-col justify-between items-center gap-4'>
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="email">Email Address</label>
                             <input className='w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2' id="email" type="email" placeholder="Email address" />
                         </div>
 
-                        <div className="form-group flex flex-col gap-2">
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="requestTitle">Your contact address</label>
                             <input className='w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2' id="requestTitle" type="text" placeholder="+1 (xxx)-xxx-xxxx" />
                         </div>
                     </div>
-                    <div className="form-group flex flex-col gap-2">
+                    <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                         <label htmlFor="">Enter your message below</label>
                         <textarea name="" id="" className='w-full h-[200px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2' placeholder='Your Message'></textarea>
                     </div>

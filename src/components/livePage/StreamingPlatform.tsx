@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function StreamingPlatform() {
     return (
-        <div className='live-container relative  w-full md:px-24 px-6 py-16 md:py-30 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 bg-cover bg-center bg-no-repeat'>
+        <div className='live-container relative  w-full md:px-24 px-6 py-16 md:py-30 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-6 bg-cover bg-center bg-no-repeat'>
             {
                 streamingPlatforms.streams.map(({ id, name, text, url, icon: Icon }) => (
                     <div className='flex flex-col items-center text-[#F5F5F5]' key={id}>

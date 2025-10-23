@@ -11,7 +11,7 @@ function EventMain() {
             <div className='w-full flex md:flex-row flex-col justify-between border-2 border-[#5A9BD5] rounded-md p-2'>
                 <div className='flex flex-row items-center gap-2'>
                     <AiOutlineSearch size={30} />
-                    <input className='w-full md:w-[700px] h-[40px] text-[#111827] rounded-md p-2 outline-0' type="text" placeholder='Search for events' />
+                    <input className='w-full md:w-[700px] h-[50px] text-[#111827] rounded-md p-2 outline-0' type="text" placeholder='Search for events' />
                 </div>
                 <div className='flex flex-row items-center gap-2'>
                     <button className='flex justify-center items-center gap-2 cursor-pointer bg-[#2E8B57] w-full sm:w-[200px] h-[50px] sm:mx-auto rounded-md hover:bg-[#1E5631] transition text-[#F5F5F5]'>Find events</button>

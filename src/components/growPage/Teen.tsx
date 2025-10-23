@@ -20,7 +20,7 @@ function Teen() {
                     <div className='flex flex-col gap-1'>
                         {
                             teen.para2.map((item) => (
-                                <div className='flex gap-2 items-center' key={item.id}>
+                                <div className='flex md:flex-row flex-col gap-2 md:items-center' key={item.id}>
                                     <p>{item.goal}</p>
                                     <p className='underline'>{item.scripture}</p>
                                 </div>
