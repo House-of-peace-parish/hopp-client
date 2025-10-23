@@ -2,26 +2,27 @@ import { teen } from '@/data/growBody'
 import Image from 'next/image'
 import React from 'react'
 
+
 function Teen() {
     return (
-        <div>
-            <div>
-                <Image src={teen.image} alt='' />
+        <div className='w-full md:px-24 px-6 py-16 gap-10 flex md:flex-row flex-col items-center'>
+            <div className='md:w-[50%] w-full'>
+                <Image style={{ boxShadow: '15px 15px 8px #5A9BD5' }} className='w-full md:w-[800px] h-[400px] md:h-[550px] object-cover rounded-2xl' src={teen.image} alt='' />
             </div>
-            <div>
-                <h3>{teen.title}</h3>
+            <div className='md:w-[50%] w-full flex flex-col'>
+                <h3 className='text-[40px] font-semibold'>{teen.title}</h3>
                 <div>
-                    <h4>{teen.header1}</h4>
+                    <h4 className='text-[#A42A2A] text-[20px]'>{teen.header1}</h4>
                     <p>{teen.para1}</p>
                 </div>
-                <div>
-                    <h4>{teen.header2}</h4>
-                    <div>
+                <div className='mt-4'>
+                    <h4 className='text-[#A42A2A] text-[20px]'>{teen.header2}</h4>
+                    <div className='flex flex-col gap-1'>
                         {
                             teen.para2.map((item) => (
-                                <div key={item.id}>
+                                <div className='flex gap-2 items-center' key={item.id}>
                                     <p>{item.goal}</p>
-                                    <p>{item.scripture}</p>
+                                    <p className='underline'>{item.scripture}</p>
                                 </div>
                             ))
                         }

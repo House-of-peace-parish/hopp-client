@@ -3,6 +3,9 @@ import { BiDirections } from 'react-icons/bi';
 import { FaPray } from 'react-icons/fa';
 import { LuBus } from 'react-icons/lu';
 import { MdOutlineVolunteerActivism } from 'react-icons/md';
+import potluck from '../assets/landPage/potluck.jpg';
+import handbook from '../assets/landPage/handbook.jpg'
+import band from '../assets/landPage/band.jpg'
 
 interface Event {
     id: number;
@@ -11,7 +14,7 @@ interface Event {
     time: string;
     location: string;
     description: string;
-    image: string;
+    image: any;
     link: string;
 }[];
 
@@ -23,7 +26,7 @@ export const upcomingEvents: Event[] = [
         time: "10:00 AM",
         location: "Main Auditorium",
         description: "Join us for a special thanksgiving service to celebrate God's blessings.",
-        image: "",
+        image: potluck,
         link: ""
     },
     {
@@ -33,7 +36,7 @@ export const upcomingEvents: Event[] = [
         time: "6:30 PM",
         location: "Youth Hall",
         description: "An engaging evening for our youth to connect, share, and worship together.",
-        image: "",
+        image: potluck,
         link: ""
     },
     {
@@ -43,7 +46,7 @@ export const upcomingEvents: Event[] = [
         time: "2:00 PM",
         location: "Local Community Center",
         description: "Help us spread love and support to those in need in our community.",
-        image: "",
+        image: potluck,
         link: ""
     },
     {
@@ -53,7 +56,7 @@ export const upcomingEvents: Event[] = [
         time: "7:00 PM",
         location: "Chapel",
         description: "A night dedicated to prayer, reflection, and uplifting worship music.",
-        image: "",
+        image: potluck,
         link: ""
     },
     {
@@ -63,7 +66,7 @@ export const upcomingEvents: Event[] = [
         time: "5:00 PM",
         location: "Room 101",
         description: "Dive deep into scripture with our weekly interactive Bible study sessions.",
-        image: "",
+        image: potluck,
         link: ""
     }
 ];
@@ -72,7 +75,7 @@ interface FundChurch {
     id: number;
     title: string;
     description: string;
-    image: string;
+    image: any;
     link: string;
     days: string;
     amountRaised: string;
@@ -84,7 +87,7 @@ export const fundChurch: FundChurch[] = [
         id: 1,
         title: "General Tithes and Offerings",
         description: "Support the overall mission and operations of the church through your tithes and offerings.",
-        image: "",
+        image: potluck,
         link: "",
         days: "45 days left",
         amountRaised: "$12,450",
@@ -94,7 +97,7 @@ export const fundChurch: FundChurch[] = [
         id: 2,
         title: "Building Fund",
         description: "Contribute to the construction and maintenance of our church facilities for a growing congregation.",
-        image: "",
+        image: potluck,
         link: "",
         days: "60 days left",
         amountRaised: "$8,750",
@@ -104,7 +107,7 @@ export const fundChurch: FundChurch[] = [
         id: 3,
         title: "Youth Ministry Support",
         description: "Help fund youth programs, activities, and events to nurture the next generation in faith.",
-        image: "",
+        image: potluck,
         link: "",
         days: "30 days left",
         amountRaised: "$5,200",
@@ -114,7 +117,7 @@ export const fundChurch: FundChurch[] = [
         id: 4,
         title: "Community Outreach",
         description: "Provide resources for feeding programs, local aid, and outreach initiatives in our community.",
-        image: "",
+        image: potluck,
         link: "",
         days: "25 days left",
         amountRaised: "$6,800",
@@ -124,7 +127,7 @@ export const fundChurch: FundChurch[] = [
         id: 5,
         title: "Mission Trips",
         description: "Support missionaries and short-term mission trips that bring hope to communities worldwide.",
-        image: "",
+        image: potluck,
         link: "",
         days: "50 days left",
         amountRaised: "$3,900",
@@ -134,7 +137,7 @@ export const fundChurch: FundChurch[] = [
         id: 6,
         title: "Music & Worship Ministry",
         description: "Help fund instruments, worship equipment, and choir programs for vibrant worship experiences.",
-        image: "",
+        image: potluck,
         link: "",
         days: "40 days left",
         amountRaised: "$4,500",
@@ -186,31 +189,31 @@ export const coreMinistries = [
         id: 1,
         title: 'Children',
         desc: 'King\'s Seeds',
-        image: ''
+        image: band
     },
     {
         id: 2,
         title: 'Youths',
         desc: 'Game Changers',
-        image: ''
+        image: band
     },
     {
         id: 3,
         title: 'Families',
         desc: 'Unique Married',
-        image: ''
+        image: band
     },
     {
         id: 4,
         title: 'Men',
         desc: 'Men of Valour',
-        image: ''
+        image: band
     },
     {
         id: 5,
         title: 'Women',
         desc: 'Women of Faith',
-        image: ''
+        image: band
     }
 ]
 
@@ -219,7 +222,7 @@ export const newGuide = {
     header: 'Your Guide to a Smooth Start in Regina',
     desc: 'Starting fresh in a new city can feel overwhelming, but this handbook is here to make your transition easier. Packed with practical tips, it helps you navigate life in Regina—from finding childcare and job opportunities to accessing community services and local resources. Consider it your go-to guide for everything you need to settle confidently and thrive in your new home.',
     link: '',
-    img: '',
+    img: handbook,
     text: 'Download Handbook'
 }
 
@@ -230,7 +233,7 @@ interface Community {
         id: number;
         title: string;
         description: string;
-        img: string;
+        img: any;
     }[];
 }
 
@@ -242,19 +245,19 @@ export const community: Community = {
             id: 1,
             title: 'Feeding the Homeless',
             description: 'Regular outreach programs to provide meals and essential supplies to homeless individuals in our city.',
-            img: ''
+            img: handbook
         },
         {
             id: 2, 
             title: 'Educational Support',
             description: 'Scholarship programs and tutoring services for underprivileged children to help them succeed academically.',
-            img: ''
+            img: handbook
         },
         {
             id: 3,
             title: 'Health Clinics',
             description: 'Organizing free health check-up camps and awareness programs to promote wellness in our community.',
-            img: ''
+            img: handbook
         }
     ]
 }

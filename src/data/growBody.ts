@@ -1,3 +1,7 @@
+import kids from '../assets/grow/kids.jpg';
+import male from '../assets/grow/male.jpg'
+import female from '../assets/grow/female.jpg'
+
 interface TeenVision {
     id: number;
     goal: string;
@@ -9,7 +13,7 @@ interface Teen {
     header1: string;
     para1: string;
     header2: string;
-    image: string;
+    image: any;
     para2: TeenVision[];
 }
 
@@ -20,7 +24,7 @@ export const teen: Teen = {
 With a passionate team of dedicated young leaders, the group has created an environment where young teens can explore their faith, connect with others, and
 grow in their relationship with God.`,
     header2: 'Our Vision',
-    image: '',
+    image: kids,
     para2: [
         {
             id: 1,
@@ -53,7 +57,7 @@ grow in their relationship with God.`,
 interface Youth {
     title: string;
     header: string;
-    image: string;
+    image: any;
     para: string;
     para2: string;
     para3: string;
@@ -63,7 +67,7 @@ interface Youth {
 export const youth: Youth = {
     title: 'Youth Fellowship',
     header: 'Join our Youth Fellowship',
-    image: '',
+    image: kids,
     para: `Our Youth Fellowship is a dynamic and engaging community designed to nurture the spiritual growth and development of young individuals.
     It serves as a platform for youth to connect, learn, and grow in their faith while building meaningful relationships with peers who share similar values and beliefs.`,
     para2: 'ABIDE is a monthly altar of study, worship, prayer, fun and fellowship. Join other young adults on ZOOM every 2nd Tuesday of the month.',
@@ -80,14 +84,14 @@ export const meetPastor = {
             name: 'Pastor John Doe',
             role: 'Youth Pastor',
             bio: 'Pastor John has been leading the youth ministry for over a decade, inspiring young hearts to embrace their faith and live purposefully.',
-            image: ''
+            image: male
         },
         {
             id: 2,
             name: 'Sarah Smith',
             role: 'Youth Leader',
             bio: 'Sarah is passionate about mentoring teenagers and creating a supportive community where they can thrive spiritually and socially.',
-            image: ''
+            image: female
         }
     ]
 };

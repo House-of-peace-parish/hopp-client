@@ -1,6 +1,7 @@
 import { IconType } from "react-icons";
 import { FaYoutube, FaFacebookSquare, FaPray, FaBible, FaChurch } from 'react-icons/fa';
 import { BiLogoZoom } from 'react-icons/bi';
+import church from '../assets/landPage/church.jpg'
 
 interface StreamPlatform {
     title: string;
@@ -44,7 +45,7 @@ export const streamingPlatforms: StreamPlatform = {
 
 interface Broadcast {
     title: string;
-    image: string;
+    image: any;
     schedule: {
         id: number;
         day: string;
@@ -55,7 +56,7 @@ interface Broadcast {
 
 export const broadCastSchedule: Broadcast = {
     title: 'Broadcasting Weekly',
-    image: '',
+    image: church,
     schedule: [
         {
             id: 1,

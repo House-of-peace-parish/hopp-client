@@ -1,4 +1,4 @@
-import { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
     content: [
@@ -11,12 +11,18 @@ const config: Config = {
             colors: {
                 light: '#F5F5F5',
                 dark: '#111827',
-                primaryGrowth: '#2E8B57',
-                primaryFaith: '#1E5631',
-                secondaryTrust: '#5A9BD5',
-                secondaryPeace: '#3B82F6',
-                accentPassion: '#A42A2A',
-                accentEnergy: '#B91C1C'
+                green: {
+                    faith: '#1E5631',
+                    growth: '#2E8B57',
+                },
+                blue: {
+                    trust: '#5A9BD5',
+                    peace: '#3B82F6',
+                },
+                red: {
+                    passion: '#A42A2A',
+                    energy: '#B91C1C',
+                },
             }
         },
         screens: {
@@ -34,4 +40,6 @@ const config: Config = {
     plugins: [
         require('tailwind-scrollbar'),
     ],
-}
+};
+
+export default config;

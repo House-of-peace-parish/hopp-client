@@ -4,7 +4,7 @@ import DonateHead from './DonateHead'
 import DonateBody from './DonateBody'
 import Footer from '@/components/footer/Footer'
 
-function Page() {
+function page() {
     return (
         <>
             <Navbar />
@@ -15,4 +15,4 @@ function Page() {
     )
 }
 
-export default Page
+export default page

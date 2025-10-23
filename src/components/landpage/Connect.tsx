@@ -3,23 +3,21 @@ import Link from 'next/link'
 import React from 'react'
 
 function Connect() {
-  return (
-    <div>
-        {
-            connectLink.map((item) => (
-                <div key={item.id}>
-                    <div>
-                        <h4>{item.title}</h4>
-                        <h3>{item.header}</h3>
-                        <Link href={item.link}>
+    return (
+        <div className='w-full flex'>
+            {
+                connectLink.map((item, id) => (
+                    <div style={{ backgroundColor: id === 0 ? '#5A9BD5' : '#A42A2A' }} className='md:px-24 px-6 py-16 w-[50%] md:h-[500px] flex flex-col justify-center items-center text-[#F5F5F5]' key={item.id}>
+                        <h4 className='font-semibold w-fit text-[20px]'>{item.title}</h4>
+                        <h3 className='text-[40px] font-semibold text-center'>{item.header}</h3>
+                        <Link className='flex items-center justify-center w-[200px] py-4 border-2 rounded-md mt-10 ' href={item.link}>
                             <span>{item.text}</span>
                         </Link>
                     </div>
-                </div>
-            ))
-        }
-    </div>
-  )
+                ))
+            }
+        </div>
+    )
 }
 
 export default Connect
