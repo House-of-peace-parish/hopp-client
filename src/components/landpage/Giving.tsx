@@ -5,8 +5,8 @@ import React from 'react'
 function Giving() {
     return (
         <div className='w-full md:px-24 px-6 py-16'>
-            <h3 className='text-[40px] font-semibold text-center'>Fund Raising</h3>
-            <p className='text-center'></p>
+            <h3 data-aos='zoom-in-up' className='text-[40px] font-semibold text-center'>Fund Raising</h3>
+            <p data-aos='zoom-in-up' className='text-center'></p>
 
             <div className='w-full mt-10 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5'>
                 {

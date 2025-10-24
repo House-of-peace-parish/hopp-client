@@ -7,9 +7,9 @@ function CommunityInit() {
   return (
     <div className='w-full md:px-24 px-6 py-16'>
         <div className='flex flex-col items-center justify-center'>
-            <h3 className='text-[40px] font-semibold text-center'>{community.header}</h3>
-            <p>{community.desc}</p>
-            <Link className='flex items-center px-4 py-3 bg-[#2E8B57] rounded-md w-fit mt-6 text-[#F5F5F5] hover:bg-[#1E5631] transition duration-150' href='' >
+            <h3 data-aos='zoom-in-up' className='text-[40px] font-semibold text-center'>{community.header}</h3>
+            <p data-aos='zoom-in-up'>{community.desc}</p>
+            <Link data-aos='zoom-in-up' className='flex items-center px-4 py-3 bg-[#2E8B57] rounded-md w-fit mt-6 text-[#F5F5F5] hover:bg-[#1E5631] transition duration-150' href='' >
                 <span>Learn More</span>
             </Link>
         </div>

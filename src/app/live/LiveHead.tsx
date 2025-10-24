@@ -11,13 +11,13 @@ function LiveHead() {
                 <Image className='h-full w-full object-cover' src={live} alt='Parish Logo' />
             </div>
             <div className='absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col justify-center items-center text-[#F5F5F5] md:px-24 px-6 text-center'>
-                <Link href=''>
+                <Link data-aos="zoom-in-up" href=''>
                     <div className='flex items-center justify-center gap-6 rounded-3xl w-[200px] h-[100px] bg-[#A42A2A]'>
                         <FaPlay size={50} />
                         <span className='text-[2rem] font-bold'>LIVE</span>
                     </div>
                 </Link>
-                <h3 className='text-[1.5rem] sm:text-[2rem] font-semibold'>Join our services online from any part of the world</h3>
+                <h3 data-aos="zoom-in-up" className='text-[1.5rem] sm:text-[2rem] font-semibold'>Join our services online from any part of the world</h3>
             </div>
         </header>
     )

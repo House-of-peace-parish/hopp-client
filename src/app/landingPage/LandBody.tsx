@@ -10,15 +10,15 @@ import React from 'react'
 
 function LandBody() {
   return (
-    <div>
-        <AboutUs />
-        <UpcomingEvents />
-        <QuickLink />
-        <NewGuide />
-        <Giving />
-        <Connect />
-        <CoreMin />
-        <CommunityInit />
+    <div className='overflow-hidden w-full'>
+      <AboutUs />
+      <UpcomingEvents />
+      <QuickLink />
+      <NewGuide />
+      <Giving />
+      <Connect />
+      <CoreMin />
+      <CommunityInit />
     </div>
   )
 }

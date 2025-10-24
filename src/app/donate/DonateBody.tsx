@@ -4,9 +4,9 @@ import React from 'react'
 
 function DonateBody() {
   return (
-    <div>
-        <Giving />
-        <Generous />
+    <div className='overflow-hidden'>
+      <Giving />
+      <Generous />
     </div>
   )
 }

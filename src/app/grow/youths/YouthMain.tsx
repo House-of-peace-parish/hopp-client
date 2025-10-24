@@ -4,9 +4,9 @@ import React from 'react'
 
 function YouthMain() {
   return (
-    <div>
-        <Youth />
-        <MeetPastor />
+    <div className='overflow-hidden'>
+      <Youth />
+      <MeetPastor />
     </div>
   )
 }

@@ -7,10 +7,10 @@ import Footer from '@/components/footer/Footer'
 function page() {
   return (
     <>
-        <Navbar />
-        <EventHead />
-        <EventMain />
-        <Footer />
+      <Navbar />
+      <EventHead />
+      <EventMain />
+      <Footer />
     </>
   )
 }

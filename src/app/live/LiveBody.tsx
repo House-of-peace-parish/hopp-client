@@ -5,10 +5,10 @@ import React from 'react'
 
 function LiveBody() {
   return (
-    <div>
-        <StreamingPlatform />
-        <BroadcastSchedule />
-        <Giving />
+    <div className='overflow-hidden'>
+      <StreamingPlatform />
+      <BroadcastSchedule />
+      <Giving />
     </div>
   )
 }

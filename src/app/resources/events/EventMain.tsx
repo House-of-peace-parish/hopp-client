@@ -7,8 +7,8 @@ import { FaRegCalendarAlt, FaRegClock } from 'react-icons/fa';
 
 function EventMain() {
     return (
-        <div className='w-full md:px-24 px-6 py-16'>
-            <div className='w-full flex md:flex-row flex-col justify-between border-2 border-[#5A9BD5] rounded-md p-2'>
+        <div className='w-full md:px-24 px-6 py-16 overflow-hidden'>
+            <div data-aos='zoom-in-up' className='w-full flex md:flex-row flex-col justify-between border-2 border-[#5A9BD5] rounded-md p-2'>
                 <div className='flex flex-row items-center gap-2'>
                     <AiOutlineSearch size={30} />
                     <input className='w-full md:w-[700px] h-[50px] text-[#111827] rounded-md p-2 outline-0' type="text" placeholder='Search for events' />
@@ -21,7 +21,7 @@ function EventMain() {
 
             <div className='my-16'>
                 <div>
-                    <h3 className='text-[40px] font-semibold text-center'>Upcoming Events</h3>
+                    <h3 data-aos='zoom-in-up' className='text-[40px] font-semibold text-center'>Upcoming Events</h3>
                     <div className='w-full mt-10 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5'>
                         {
                             upcomingEvents.map((item) => (

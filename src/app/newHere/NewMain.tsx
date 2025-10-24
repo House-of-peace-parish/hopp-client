@@ -6,11 +6,11 @@ import React from 'react'
 
 function NewMain() {
   return (
-    <div>
-        <NewGuide />
-        <Connect />
-        <QuickLink />
-        <MeetPastor />
+    <div className='overflow-hidden'>
+      <NewGuide />
+      <Connect />
+      <QuickLink />
+      <MeetPastor />
     </div>
   )
 }

@@ -4,9 +4,9 @@ import React from 'react'
 
 function TeenBody() {
   return (
-    <div>
-        <Teen />
-        <MeetPastor />
+    <div className='overflow-hidden'>
+      <Teen />
+      <MeetPastor />
     </div>
   )
 }

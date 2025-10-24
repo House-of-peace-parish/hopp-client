@@ -4,9 +4,9 @@ import React from 'react'
 
 function CommunityBody() {
   return (
-    <div>
-        <CommunityInit />
-        <Giving />
+    <div className='overflow-hidden'>
+      <CommunityInit />
+      <Giving />
     </div>
   )
 }
