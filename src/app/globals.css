@@ -5,6 +5,23 @@
   --foreground: #171717;
 }
 
+.nav_item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_item a {
+  font-weight: 600;
+}
+
+.nav_btn {
+  width: fit-content;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
 .footer-bg {
   background-image: url('../assets/footer/footer.jpg');
   background-size: cover;
@@ -41,7 +58,7 @@
 
 .quicklink-container>*,
 .footer-bg>*,
-.live-container > * {
+.live-container>* {
   position: relative;
   z-index: 10;
 }

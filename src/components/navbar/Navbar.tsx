@@ -8,11 +8,27 @@ import { navbarHeader } from '@/data/navbar';
 import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoCloseSharp } from 'react-icons/io5';
+import { FaAngleDown } from 'react-icons/fa';
+
 
 function Navbar() {
     const [openNav, setOpenNav] = useState<boolean>(false);
     const handleNav = () => {
         setOpenNav(!openNav);
+    };
+
+    const [growOpen, setGrowOpen] = useState(false);
+    const [resourcesOpen, setResourcesOpen] = useState(false);
+
+    const handleGrowDropdown = () => {
+        setGrowOpen(!growOpen);
+        setResourcesOpen(false);
+    };
+
+    const handleResourcesDropdown = () => {
+        setResourcesOpen(!resourcesOpen);
+        setGrowOpen(false);
     };
 
     return (
@@ -50,14 +66,99 @@ function Navbar() {
 
                 {/* Navigation Links */}
                 <div
-                    className={`fixed top-0 left-0 h-full bg-[#3B82F6] flex flex-col items-center justify-center gap-6  text-[#F5F5F5] font-semibold text-lg transform transition-transform duration-700 ease-in-out ${openNav ? 'translate-x-0 w-[70vw] z-20' : '-translate-x-full'} md:static md:flex md:flex-row md:h-auto md:w-auto md:translate-x-0 md:gap-8`}
+                    className={`md:nav_item grid gap-6 md:static fixed top-0 z-30 h-screen md:h-fit md:w-fit w-[70vw] md:bg-transparent bg-[#3B82F6] md:p-0 p-4 md:text-[#F5F5F5] text-[#F5F5F5] transition-all duration-700 ${openNav ? 'left-0' : '-left-full'
+                        }`}
                 >
-                    <Link href="/">Home</Link>
-                    <Link href="/live">Live</Link>
-                    <Link href="/donate">Donate</Link>
-                    <Link href="/grow">Grow</Link>
-                    <Link href="/newHere">New Here?</Link>
-                    <Link href="/resources">Resources</Link>
+                    <ul className='md:flex md:items-center md:flex-row flex-col h-full gap-3'>
+                        {/* Close Button for Mobile */}
+                        <div
+                            onClick={handleNav}
+                            className='md:hidden flex items-center justify-center w-10 h-10 ml-auto text-[25px] text-white cursor-pointer'
+                        >
+                            <IoCloseSharp />
+                        </div>
+
+                        {/* Home Links */}
+                        <li className='md:nav_item leading-9 font-semibold'>
+                            <Link href='/'>Home</Link>
+                        </li>
+                        <li className='md:nav_item leading-9 font-semibold'>
+                            <Link href='/live'>Live</Link>
+                        </li>
+                        <li className='md:nav_item leading-9 font-semibold'>
+                            <Link href='/donate'>Donate</Link>
+                        </li>
+
+                        {/* GROW DROPDOWN */}
+                        <li className='md:nav_item grid gap-2 relative'>
+                            <div
+                                onClick={handleGrowDropdown}
+                                className='drop font-semibold flex items-center gap-2 cursor-pointer'
+                            >
+                                <span>Grow</span>
+                                <FaAngleDown
+                                    className={`transition-transform duration-300 ${growOpen ? 'rotate-180' : 'rotate-0'
+                                        }`}
+                                />
+                            </div>
+
+                            {/* Dropdown Content */}
+                            <div
+                                className={`drop_courses md:absolute static left-[-2rem] top-[50px] md:w-[180px] w-full rounded-md bg-[#2563EB] grid gap-2 font-medium text-[#F5F5F5] transition-all duration-500 ${growOpen
+                                    ? 'opacity-100 max-h-[200px] p-2 overflow-visible'
+                                    : 'opacity-0 max-h-0 overflow-hidden p-0'
+                                    }`}
+                            >
+                                <Link href='/teen' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                    Teen
+                                </Link>
+                                <Link href='/youth' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                    Youth
+                                </Link>
+                            </div>
+                        </li>
+
+                        <li className='md:nav_item leading-9 font-semibold'>
+                            <Link href='/newHere'>New Here?</Link>
+                        </li>
+
+                        {/* RESOURCES DROPDOWN */}
+                        <li className='md:nav_item grid gap-2 relative'>
+                            <div
+                                onClick={handleResourcesDropdown}
+                                className='drop font-semibold flex items-center gap-2 cursor-pointer'
+                            >
+                                <span>Resources</span>
+                                <FaAngleDown
+                                    className={`transition-transform duration-300 ${resourcesOpen ? 'rotate-180' : 'rotate-0'
+                                        }`}
+                                />
+                            </div>
+
+                            <div
+                                className={`drop_courses md:absolute static left-[-2rem] top-[50px] md:w-[200px] w-full rounded-md bg-[#2563EB] grid gap-2 font-medium text-[#F5F5F5] transition-all duration-500 ${resourcesOpen
+                                    ? 'opacity-100 max-h-[300px] p-2 overflow-visible'
+                                    : 'opacity-0 max-h-0 overflow-hidden p-0'
+                                    }`}
+                            >
+                                <Link href='/community' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                    Community
+                                </Link>
+                                <Link href='/contact' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                    Contact
+                                </Link>
+                                <Link href='/events' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                    Events
+                                </Link>
+                                <Link href='/prayer' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                    Prayer
+                                </Link>
+                                <Link href='/welfare' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                    Welfare
+                                </Link>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
                 {/* Social Icons */}
