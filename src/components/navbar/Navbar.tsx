@@ -104,15 +104,15 @@ function Navbar() {
 
                             {/* Dropdown Content */}
                             <div
-                                className={`drop_courses md:absolute static left-[-2rem] top-[50px] md:w-[180px] w-full rounded-md bg-[#2563EB] grid gap-2 font-medium text-[#F5F5F5] transition-all duration-500 ${growOpen
+                                className={`drop_courses md:absolute static -left-8 top-[50px] md:w-[180px] w-full rounded-md bg-[#2563EB] grid gap-2 font-medium text-[#F5F5F5] transition-all duration-500 ${growOpen
                                     ? 'opacity-100 max-h-[200px] p-2 overflow-visible'
                                     : 'opacity-0 max-h-0 overflow-hidden p-0'
                                     }`}
                             >
-                                <Link href='/teen' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/grow/teens' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Teen
                                 </Link>
-                                <Link href='/youth' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/grow/youths' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Youth
                                 </Link>
                             </div>
@@ -136,24 +136,24 @@ function Navbar() {
                             </div>
 
                             <div
-                                className={`drop_courses md:absolute static left-[-2rem] top-[50px] md:w-[200px] w-full rounded-md bg-[#2563EB] grid gap-2 font-medium text-[#F5F5F5] transition-all duration-500 ${resourcesOpen
+                                className={`drop_courses md:absolute static -left-8 top-[50px] md:w-[200px] w-full rounded-md bg-[#2563EB] grid gap-2 font-medium text-[#F5F5F5] transition-all duration-500 ${resourcesOpen
                                     ? 'opacity-100 max-h-[300px] p-2 overflow-visible'
                                     : 'opacity-0 max-h-0 overflow-hidden p-0'
                                     }`}
                             >
-                                <Link href='/community' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/resources/community' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Community
                                 </Link>
-                                <Link href='/contact' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/resources/contact' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Contact
                                 </Link>
-                                <Link href='/events' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/resources/events' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Events
                                 </Link>
-                                <Link href='/prayer' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/resources/prayer' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Prayer
                                 </Link>
-                                <Link href='/welfare' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/resources/welfare' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Welfare
                                 </Link>
                             </div>
