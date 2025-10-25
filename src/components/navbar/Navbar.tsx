@@ -112,7 +112,7 @@ function Navbar() {
                                 <Link href='/grow/teens' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Teen
                                 </Link>
-                                <Link href='/grow/youths' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/grow' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Youth
                                 </Link>
                             </div>
