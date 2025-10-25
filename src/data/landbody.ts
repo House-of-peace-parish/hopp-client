@@ -157,28 +157,28 @@ export const quickLinks: QuickLink[] = [
     {
         id: 1,
         title: 'New? Start Here',
-        link: '',
+        link: '/newHere',
         text: 'Learn more',
         icon: BiDirections
     },
     {
         id: 2,
         title: 'Prayer Requests',
-        link: '',
+        link: '/resources/prayer',
         text: 'Get help',
         icon: FaPray
     },
     {
         id: 3,
         title: 'Need ride to church?',
-        link: '',
+        link: '/resources/welfare',
         text: 'Request ride',
         icon: LuBus
     },
     {
         id: 4,
         title: 'Become a volunteer',
-        link: '',
+        link: '/resources/welfare',
         text: 'Learn more',
         icon: MdOutlineVolunteerActivism
     }
