@@ -17,7 +17,7 @@ function LandHead() {
                     We are a vibrant parish under The Redeemed Christian Church of God, dedicated to raising Kingdom Stars for global influence through the teaching and application of God’s Word.
                 </p>
                 <Link data-aos="zoom-in-up" className='block w-fit' href=''>
-                    <div className='flex justify-center items-center gap-2 mt-8 cursor-pointer bg-[#2E8B57] w-full sm:w-[200px] h-[50px] rounded-md hover:bg-[#1E5631] transition'>
+                    <div className='flex justify-center items-center gap-2 mt-8 cursor-pointer bg-[#2E8B57] w-[200px] h-[50px] rounded-md hover:bg-[#1E5631] transition'>
                         <p>Join us online</p>
                         <FaArrowRight size={24} />
                     </div>
