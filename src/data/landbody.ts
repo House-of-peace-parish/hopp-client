@@ -238,29 +238,48 @@ interface Community {
 }
 
 export const community: Community = {
-    header: 'Our Community Initiatives',
-    desc: 'At House of Peace Parish, we are deeply committed to making a positive impact in our local and global communities through various outreach programs and initiatives.',
-    initiatives: [
-        {
-            id: 1,
-            title: 'Feeding the Homeless',
-            description: 'Regular outreach programs to provide meals and essential supplies to homeless individuals in our city.',
-            img: handbook
-        },
-        {
-            id: 2, 
-            title: 'Educational Support',
-            description: 'Scholarship programs and tutoring services for underprivileged children to help them succeed academically.',
-            img: handbook
-        },
-        {
-            id: 3,
-            title: 'Health Clinics',
-            description: 'Organizing free health check-up camps and awareness programs to promote wellness in our community.',
-            img: handbook
-        }
-    ]
+  header: 'Our Community Initiatives',
+  desc: 'At House of Peace Parish, we are deeply committed to making a positive impact in our local and global communities through various outreach programs and initiatives.',
+  initiatives: [
+    {
+      id: 1,
+      title: 'Feeding the Homeless',
+      description: 'Regular outreach programs to provide meals and essential supplies to homeless individuals in our city.',
+      img: handbook
+    },
+    {
+      id: 2, 
+      title: 'Educational Support',
+      description: 'Scholarship programs and tutoring services for underprivileged children to help them succeed academically.',
+      img: handbook
+    },
+    {
+      id: 3,
+      title: 'Health Clinics',
+      description: 'Organizing free health check-up camps and awareness programs to promote wellness in our community.',
+      img: handbook
+    },
+    {
+      id: 4,
+      title: 'Environmental Initiatives',
+      description: 'Community clean-up drives, tree planting activities, and environmental awareness campaigns to promote sustainability.',
+      img: handbook
+    },
+    {
+      id: 5,
+      title: 'Youth Empowerment',
+      description: 'Workshops, mentorship, and skill-building programs to empower the youth and encourage leadership in the community.',
+      img: handbook
+    },
+    {
+      id: 6,
+      title: 'Senior Care Support',
+      description: 'Visiting elderly members of the community, providing companionship, and helping with essential needs.',
+      img: handbook
+    }
+  ]
 }
+
 
 
 export const testimonies = [

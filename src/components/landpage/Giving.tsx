@@ -6,7 +6,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import { EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow, Autoplay } from "swiper/modules";
 
 function Giving() {
     return (
@@ -20,6 +20,11 @@ function Giving() {
                     grabCursor={true}
                     centeredSlides={true}
                     loop={true}
+                    autoplay={{
+                        delay: 3000,
+                        pauseOnMouseEnter: true,
+                        disableOnInteraction: false,
+                    }}
                     slidesPerView={3}
                     spaceBetween={20}
                     coverflowEffect={
@@ -50,7 +55,7 @@ function Giving() {
                             slidesPerView: 3,
                         },
                     }}
-                    modules={[EffectCoverflow]}
+                    modules={[EffectCoverflow, Autoplay]}
                     className="w-[95%] mx-auto max-w-[1400px]"
                 >
                     {fundChurch.map((item) => (

@@ -147,7 +147,7 @@ function Navbar() {
                                 <Link href='/resources/contact' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Contact
                                 </Link>
-                                <Link href='/resources/events' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
+                                <Link href='/resources' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
                                     Events
                                 </Link>
                                 <Link href='/resources/prayer' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
@@ -164,13 +164,13 @@ function Navbar() {
                 {/* Social Icons */}
                 <div className="flex items-center md:gap-6 gap-3">
                     <Link href="">
-                        <FaInstagram className="text-[#F5F5F5]" size={26} />
+                        <FaInstagram className="text-[#F5F5F5] hover:text-[#A42A2A] transition-colors duration-150" size={26} />
                     </Link>
                     <Link href="">
-                        <FaFacebook className="text-[#F5F5F5]" size={26} />
+                        <FaFacebook className="text-[#F5F5F5] hover:text-[#A42A2A] transition-colors duration-150" size={26} />
                     </Link>
                     <Link href="">
-                        <FaYoutube className="text-[#F5F5F5]" size={26} />
+                        <FaYoutube className="text-[#F5F5F5] hover:text-[#A42A2A] transition-colors duration-150" size={26} />
                     </Link>
                 </div>
 

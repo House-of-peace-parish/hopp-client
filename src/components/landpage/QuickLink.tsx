@@ -34,10 +34,10 @@ function QuickLink() {
                     <Icon className='text-[#2E8B57]' size={60} />
                     <h4 className='font-semibold text-[20px] mt-4'>{title}</h4>
                     <Link
-                        className='flex items-center justify-center w-[200px] py-4 border-2 rounded-md mt-10'
+                        className='link-btn relative flex items-center justify-center w-[200px] py-4 border-2 border-[#F5F5F5] rounded-md mt-10 text-[#2E8B57] hover:text-[#F5F5F5] transition-colors'
                         href={link}
                     >
-                        <span className='text-[#2E8B57]'>{text}</span>
+                        <span>{text}</span>
                     </Link>
                 </div>
             ))}

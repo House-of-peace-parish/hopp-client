@@ -8,7 +8,7 @@ import { FaRegCalendarAlt, FaRegClock } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import { EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow, Autoplay } from "swiper/modules";
 
 function UpcomingEvents() {
     return (
@@ -24,6 +24,11 @@ function UpcomingEvents() {
                     loop={true}
                     slidesPerView={3}
                     spaceBetween={20}
+                    autoplay={{
+                        delay: 3000,
+                        pauseOnMouseEnter: true,
+                        disableOnInteraction: false,
+                    }}
                     coverflowEffect={
                         {
                             rotate: 0,
@@ -52,12 +57,12 @@ function UpcomingEvents() {
                             slidesPerView: 3,
                         },
                     }}
-                    modules={[EffectCoverflow]}
+                    modules={[EffectCoverflow, Autoplay]}
                     className="w-[95%] mx-auto max-w-[1400px]"
                 >
                     {upcomingEvents.map((item) => (
                         <SwiperSlide key={item.id}>
-                            <div className='w-full flex flex-col p-2 rounded-2xl shadow-md h-[500px] md:h-[600px] bg-[#F5F5F5]' key={item.id}>
+                            <div className='w-full flex flex-col p-2 rounded-2xl shadow-md h-[500px] md:h-[600px] bg-[#F5F5F5]'>
                                 <div className='w-full h-[65%] md:h-[70%]'>
                                     <Image className='w-full h-full object-cover rounded-2xl' src={item.image} alt="" />
                                 </div>

@@ -11,7 +11,7 @@ export default function StoreProviderClient({ children }: { children: React.Reac
     useEffect(() => {
         AOS.init({
             duration: 2000,
-            once: true,
+            once: false,
             easing: 'ease-in-sine',
             offset: 100
         })
