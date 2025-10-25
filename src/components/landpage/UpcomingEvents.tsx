@@ -58,7 +58,7 @@ function UpcomingEvents() {
                     {upcomingEvents.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div className='w-full flex flex-col p-2 rounded-2xl shadow-md h-[500px] md:h-[600px] bg-[#F5F5F5]' key={item.id}>
-                                <div className='w-full h-[70%]'>
+                                <div className='w-full h-[65%] md:h-[70%]'>
                                     <Image className='w-full h-full object-cover rounded-2xl' src={item.image} alt="" />
                                 </div>
                                 <div className='mt-auto flex flex-col w-full'>
