@@ -33,7 +33,7 @@ function Giving() {
                     }
                     breakpoints={{
                         0: {
-                            slidesPerView: 1.3,
+                            slidesPerView: 1.1,
                             spaceBetween: 20,
                             coverflowEffect: {
                                 depth: 200,
