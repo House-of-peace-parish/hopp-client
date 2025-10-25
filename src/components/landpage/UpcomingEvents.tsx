@@ -1,3 +1,5 @@
+'use client';
+
 import { upcomingEvents } from '@/data/landbody'
 import Image from 'next/image'
 import React from 'react'
