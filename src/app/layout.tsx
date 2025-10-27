@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "House Of Peace Parish",
-  description: "We are a vibrant parish under The Redeemed Christian Church of God, dedicated to raising Kingdom Stars for global influence through the teaching and application of God’s Word",
+  description: "We are a vibrant parish under The Redeemed Christian Church of God, dedicated to raising Kingdom Stars for global influence through the teaching and application of God’s Wrd",
   icons: {
     icon: '/hopp.png.ico'
   }
