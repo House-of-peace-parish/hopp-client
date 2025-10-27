@@ -47,6 +47,19 @@ function WelfareMain() {
                         </div>
 
                         <div className="form-group w-full sm:w-fit flex flex-col gap-2">
+                            <label htmlFor="rideDate">Your contact address</label>
+                            <input
+                                id="email"
+                                type="phone"
+                                placeholder="+1 (351) - XXX - XXXX"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Pickup Address */}
+                    <div className='w-full flex sm:flex-row flex-col justify-between items-center gap-4'>
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
                             <label htmlFor="rideDate">Select a Date</label>
                             <input
                                 id="rideDate"
@@ -54,19 +67,16 @@ function WelfareMain() {
                                 className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
+                        <div className="form-group w-full sm:w-fit flex flex-col gap-2">
+                            <label htmlFor="pickupAddress">Your Pickup Address</label>
+                            <input
+                                id="pickupAddress"
+                                type="text"
+                                placeholder="Your pickup address"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                            />
+                        </div>
                     </div>
-
-                    {/* Pickup Address */}
-                    <div className="form-group w-full sm:w-fit flex flex-col gap-2">
-                        <label htmlFor="pickupAddress">Your Pickup Address</label>
-                        <input
-                            id="pickupAddress"
-                            type="text"
-                            placeholder="Your pickup address"
-                            className="w-full h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
-                        />
-                    </div>
-
                 </div>
 
                 {/* Submit Button */}
