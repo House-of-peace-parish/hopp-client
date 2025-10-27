@@ -1,3 +1,4 @@
+'use client';
 import { WelfareData } from '@/interfaces/interface';
 import { AppDispatch } from '@/store/store'
 import { postWelfare } from '@/store/welfareStore/welfareApiSlice';

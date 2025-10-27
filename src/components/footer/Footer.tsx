@@ -1,3 +1,4 @@
+'use client';
 import { footerLinks } from '@/data/footer'
 import { SubscriberData } from '@/interfaces/interface';
 import { AppDispatch } from '@/store/store'
