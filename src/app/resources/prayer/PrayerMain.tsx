@@ -18,7 +18,7 @@ function PrayerMain() {
                                 id="firstName"
                                 type="text"
                                 placeholder="First name"
-                                className="w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
 
@@ -28,7 +28,7 @@ function PrayerMain() {
                                 id="lastName"
                                 type="text"
                                 placeholder="Last name"
-                                className="w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
                     </div>
@@ -41,7 +41,7 @@ function PrayerMain() {
                                 id="email"
                                 type="email"
                                 placeholder="Email address"
-                                className="w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
 
@@ -51,13 +51,13 @@ function PrayerMain() {
                                 id="contactAddress"
                                 type="text"
                                 placeholder="+1 (xxx)-xxx-xxxx"
-                                className="w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
                     </div>
 
                     {/* Message Field */}
-                    <div className="form-group w-full sm:w-fit flex flex-col gap-2">
+                    <div className="form-group w-full flex flex-col gap-2">
                         <label htmlFor="message">Enter your message below</label>
                         <textarea
                             id="message"

@@ -19,7 +19,7 @@ function WelfareMain() {
                                 id="firstName"
                                 type="text"
                                 placeholder="First name"
-                                className="w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
 
@@ -29,7 +29,7 @@ function WelfareMain() {
                                 id="lastName"
                                 type="text"
                                 placeholder="Last name"
-                                className="w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
                     </div>
@@ -42,7 +42,7 @@ function WelfareMain() {
                                 id="email"
                                 type="email"
                                 placeholder="Email address"
-                                className="w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
 
@@ -51,7 +51,7 @@ function WelfareMain() {
                             <input
                                 id="rideDate"
                                 type="date"
-                                className="w-full sm:w-[300px] h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                                className="w-full sm:w-[300px] h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                             />
                         </div>
                     </div>
@@ -63,7 +63,7 @@ function WelfareMain() {
                             id="pickupAddress"
                             type="text"
                             placeholder="Your pickup address"
-                            className="w-full h-[40px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
+                            className="w-full h-10 border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2"
                         />
                     </div>
 
