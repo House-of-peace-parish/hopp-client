@@ -177,7 +177,7 @@ function ContactBody() {
                         <label htmlFor="">Enter your message below</label>
                         <textarea
                             name="message"
-                            value={contactData.lastName}
+                            value={contactData.message}
                             onChange={handleChange}
                             id=""
                             className='w-full h-[200px] border-2 border-[#5A9BD5] text-[#111827] rounded-md p-2' placeholder='Your Message'
