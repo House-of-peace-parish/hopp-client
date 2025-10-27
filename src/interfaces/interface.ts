@@ -41,7 +41,7 @@ export interface WelfareData {
     lastName: string;
     email: string;
     phone: string,
-    date: Date;
+    date: string;
     pickUp: string;
 }
 
