@@ -1,13 +1,20 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'
+import contactApiSlice from './contactStore/contactApiSlice'
+import welfareApiSlice from './welfareStore/welfareApiSlice'
+import subscriberApiSlice from './subscriberStore/subscriberApiSlice'
 
 const persistConfig = {
     key: 'root',
     storage
 }
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+    contact: contactApiSlice,
+    welfare: welfareApiSlice,
+    subscriber: subscriberApiSlice
+});
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
