@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoCloseSharp } from 'react-icons/io5';
-import { FaAngleDown } from 'react-icons/fa';
+import { FaAngleDown, FaTiktok } from 'react-icons/fa';
 
 
 function Navbar() {
@@ -163,14 +163,17 @@ function Navbar() {
 
                 {/* Social Icons */}
                 <div className="flex items-center md:gap-6 gap-3">
-                    <Link href="">
+                    <Link href="https://www.instagram.com/rccg_house_of_peace/">
                         <FaInstagram className="text-[#F5F5F5] hover:text-[#A42A2A] transition-colors duration-150" size={26} />
                     </Link>
-                    <Link href="">
+                    <Link href="https://www.facebook.com/RCCGHouseofPeaceRegina/">
                         <FaFacebook className="text-[#F5F5F5] hover:text-[#A42A2A] transition-colors duration-150" size={26} />
                     </Link>
-                    <Link href="">
+                    <Link href="https://www.youtube.com/@rccghouseofpeacereginaskcanada/">
                         <FaYoutube className="text-[#F5F5F5] hover:text-[#A42A2A] transition-colors duration-150" size={26} />
+                    </Link>
+                    <Link href="https://www.tiktok.com/@rccghouseofpeace.regina">
+                        <FaTiktok className="text-[#F5F5F5] hover:text-[#A42A2A] transition-colors duration-150" size={26} />
                     </Link>
                 </div>
 
