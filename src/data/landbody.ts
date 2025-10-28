@@ -6,6 +6,19 @@ import { MdOutlineVolunteerActivism } from 'react-icons/md';
 import potluck from '../assets/landPage/potluck.jpg';
 import handbook from '../assets/landPage/handbook.jpg'
 import band from '../assets/landPage/band.jpg'
+import event1 from '../assets/event/event1.jpg'
+import event2 from '../assets/event/event2.jpg'
+import event3 from '../assets/event/event3.jpg'
+import event4 from '../assets/event/event4.jpg'
+import event5 from '../assets/event/event5.jpg'
+import event6 from '../assets/event/event6.jpg'
+import event7 from '../assets/event/event7.jpg'
+
+import seed from '../assets/gallery/seed.jpg'
+import youth from '../assets/gallery/youth.jpg'
+import families from '../assets/gallery/families.jpg'
+import men from '../assets/gallery/men.jpg'
+import women from '../assets/gallery/women.jpg'
 
 interface Event {
     id: number;
@@ -22,31 +35,31 @@ export const upcomingEvents: Event[] = [
     {
         id: 1,
         title: "Thanksgiving Service",
-        date: "2024-07-14",
-        time: "10:00 AM",
-        location: "Main Auditorium",
+        date: "Sun, Oct 5",
+        time: "09:30 AM",
+        location: "1042 Albert st, Regina, Sk",
         description: "Join us for a special thanksgiving service to celebrate God's blessings.",
-        image: potluck,
+        image: event1,
         link: ""
     },
     {
         id: 2,
-        title: "Youth Fellowship Night",
-        date: "2024-07-18",
-        time: "6:30 PM",
-        location: "Youth Hall",
+        title: "Digging Deep",
+        date: "Every Wednesday",
+        time: "07:30 PM",
+        location: "1042 Albert st, Regina, Sk",
         description: "An engaging evening for our youth to connect, share, and worship together.",
-        image: potluck,
+        image: event2,
         link: ""
     },
     {
         id: 3,
-        title: "Community Outreach",
-        date: "2024-07-22",
-        time: "2:00 PM",
-        location: "Local Community Center",
-        description: "Help us spread love and support to those in need in our community.",
-        image: potluck,
+        title: "Sunday Service",
+        date: "Every Sunday",
+        time: "09:30 AM",
+        location: "1042 Albert st, Regina, Sk",
+        description: "Let us go to His dwelling place; Let us worship at His footstool - Psalm 132:7.",
+        image: event3,
         link: ""
     },
     {
@@ -56,7 +69,7 @@ export const upcomingEvents: Event[] = [
         time: "7:00 PM",
         location: "Chapel",
         description: "A night dedicated to prayer, reflection, and uplifting worship music.",
-        image: potluck,
+        image: event4,
         link: ""
     },
     {
@@ -66,7 +79,7 @@ export const upcomingEvents: Event[] = [
         time: "5:00 PM",
         location: "Room 101",
         description: "Dive deep into scripture with our weekly interactive Bible study sessions.",
-        image: potluck,
+        image: event5,
         link: ""
     }
 ];
@@ -189,31 +202,31 @@ export const coreMinistries = [
         id: 1,
         title: 'Children',
         desc: 'King\'s Seeds',
-        image: band
+        image: seed
     },
     {
         id: 2,
         title: 'Youths',
         desc: 'Game Changers',
-        image: band
+        image: youth
     },
     {
         id: 3,
         title: 'Families',
         desc: 'Unique Married',
-        image: band
+        image: families
     },
     {
         id: 4,
         title: 'Men',
         desc: 'Men of Valour',
-        image: band
+        image: men
     },
     {
         id: 5,
         title: 'Women',
         desc: 'Women of Faith',
-        image: band
+        image: women
     }
 ]
 
