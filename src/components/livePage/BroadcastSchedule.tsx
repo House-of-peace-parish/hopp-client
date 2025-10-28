@@ -1,7 +1,7 @@
 import { broadCastSchedule } from '@/data/liveBody'
 import Image from 'next/image'
 import React from 'react'
-import church from '../../assets/landPage/church.jpg'
+import broadcast from '../../assets/gallery/broadcast.jpg'
 
 function BroadcastSchedule() {
     return (

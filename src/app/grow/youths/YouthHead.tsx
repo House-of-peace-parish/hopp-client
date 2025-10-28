@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import youth from '../../../assets/grow/youth.jpg'
+import youth from '../../../assets/gallery/youth.jpg'
 
 function YouthHead() {
     return (
