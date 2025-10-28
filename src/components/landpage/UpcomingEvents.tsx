@@ -70,17 +70,17 @@ function UpcomingEvents() {
                                     <h4 className='font-semibold border-b-2 border-b-[#5A9BD5] w-fit text-[20px]'>{item.title}</h4>
                                     <div className='flex gap-4 my-2'>
                                         <div className='flex items-center gap-1'>
-                                            <FaRegCalendarAlt className='inline text-[#A42A2A]' size={20} />
-                                            <span className='ml-2'>{item.date}</span>
+                                            <FaRegCalendarAlt className='inline text-[#A42A2A]' size={18} />
+                                            <span className='ml-2 text-[12px]'>{item.date}</span>
                                         </div>
                                         <div className='flex items-center gap-1'>
-                                            <FaRegClock className='inline text-[#A42A2A]' size={20} />
-                                            <span className='ml-2'>{item.time}</span>
+                                            <FaRegClock className='inline text-[#A42A2A]' size={18} />
+                                            <span className='ml-2 text-[12px]'>{item.time}</span>
                                         </div>
                                     </div>
                                     <div className='flex items-center gap-1'>
-                                        <MdLocationPin className='inline text-[#A42A2A]' size={20} />
-                                        <span>{item.location}</span>
+                                        <MdLocationPin className='inline text-[#A42A2A]' size={18} />
+                                        <span className='text-[12px]'>{item.location}</span>
                                     </div>
                                     <p className='mt-2'>{item.description}</p>
                                 </div>
