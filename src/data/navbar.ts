@@ -22,14 +22,14 @@ export const navbarHeader: NavbarItem[] = [
         id: 2,
         icon: FaChurch,
         title: 'Worship with us',
-        text: 'Sundays at 10am',
+        text: 'Sundays at 09:30 AM CST',
         link: ''
     },
     {
         id: 3,
         icon: FaMobileAlt,
         title: 'Contact us',
-        text: '(306) 757-1004',
+        text: '+1 (306) 216-9058',
         link: ''
     }
 ]

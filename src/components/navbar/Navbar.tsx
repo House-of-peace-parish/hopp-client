@@ -55,7 +55,7 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className="w-full py-6 md:py-10 px-6 md:px-24 flex justify-between items-center bg-[#3B82F6] relative">
+            <div className="w-full py-6 md:py-10 px-6 md:px-24 flex justify-between items-center bg-[#1E5631] relative">
                 {/* Hamburger Icon */}
                 <div
                     onClick={handleNav}
@@ -110,10 +110,10 @@ function Navbar() {
                                     }`}
                             >
                                 <Link href='/grow/teens' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
-                                    Teen
+                                    Teens
                                 </Link>
                                 <Link href='/grow' className='px-3 py-2 hover:bg-[#2E8B57] rounded-md'>
-                                    Youth
+                                    Youths
                                 </Link>
                             </div>
                         </li>

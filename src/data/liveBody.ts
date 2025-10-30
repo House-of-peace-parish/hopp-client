@@ -61,20 +61,8 @@ export const broadCastSchedule: Broadcast = {
         {
             id: 1,
             day: 'Sunday',
-            time: '10:00 AM - 12:00 PM EST',
+            time: '09:30 AM CST',
             icon: FaChurch
-        },
-        {
-            id: 2,
-            day: 'Wednesday',
-            time: '7:00 PM - 8:30 PM EST',
-            icon: FaBible
-        },
-        {
-            id: 3,
-            day: 'Friday',
-            time: '6:00 PM - 7:30 PM EST',
-            icon: FaPray
         }
     ]
 }

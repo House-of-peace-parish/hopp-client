@@ -3,22 +3,60 @@ import { BiDirections } from 'react-icons/bi';
 import { FaPray } from 'react-icons/fa';
 import { LuBus } from 'react-icons/lu';
 import { MdOutlineVolunteerActivism } from 'react-icons/md';
+
 import potluck from '../assets/landPage/potluck.jpg';
 import handbook from '../assets/landPage/handbook.jpg'
-import band from '../assets/landPage/band.jpg'
+
 import event1 from '../assets/event/event1.jpg'
 import event2 from '../assets/event/event2.jpg'
 import event3 from '../assets/event/event3.jpg'
 import event4 from '../assets/event/event4.jpg'
 import event5 from '../assets/event/event5.jpg'
-import event6 from '../assets/event/event6.jpg'
-import event7 from '../assets/event/event7.jpg'
 
 import seed from '../assets/gallery/seed.jpg'
 import youth from '../assets/gallery/youth.jpg'
 import families from '../assets/gallery/families.jpg'
 import men from '../assets/gallery/men.jpg'
 import women from '../assets/gallery/women.jpg'
+
+import car1 from '../assets/Home/Car1.jpg'
+import car2 from '../assets/Home/Car2.jpg'
+import car3 from '../assets/Home/Car3.jpg'
+import car4 from '../assets/Home/Car4.jpg'
+import car5 from '../assets/Home/Car5.jpg'
+import car6 from '../assets/Home/Car6.jpg'
+
+interface LandCarousel {
+    id: number;
+    image: any;
+}
+
+export const landHeadCarousel: LandCarousel[] = [
+    {
+        id: 1,
+        image: car1
+    },
+    {
+        id: 2,
+        image: car2
+    },
+    {
+        id: 3,
+        image: car3
+    },
+    {
+        id: 4,
+        image: car4
+    },
+    {
+        id: 5,
+        image: car5
+    },
+    {
+        id: 6,
+        image: car6
+    },
+]
 
 interface Event {
     id: number;
@@ -234,7 +272,7 @@ export const newGuide = {
     title: 'The Regina newcomer\'s handbook by HOPP',
     header: 'Your Guide to a Smooth Start in Regina',
     desc: 'Starting fresh in a new city can feel overwhelming, but this handbook is here to make your transition easier. Packed with practical tips, it helps you navigate life in Regina—from finding childcare and job opportunities to accessing community services and local resources. Consider it your go-to guide for everything you need to settle confidently and thrive in your new home.',
-    link: '',
+    link: 'https://www.regina.ca/about-regina/moving-to-regina/ ',
     img: handbook,
     text: 'Download Handbook'
 }
@@ -339,7 +377,7 @@ export const connectLink: Connect[] = [
         header: 'Connect and Grow Together',
         text: 'Connect now',
         image: '',
-        link: ''
+        link: '/resources/prayer'
     },
     {
         id: 2,
@@ -347,6 +385,41 @@ export const connectLink: Connect[] = [
         header: 'Serve with Us',
         text: 'Get involved',
         image: '',
-        link: ''
+        link: '/resources/welfare'
     }
 ]
+
+export interface GivingOption {
+  id: number;
+  title: string;
+  description: string;
+  email?: string;
+  note?: string;
+}
+
+
+export const givingOptions: GivingOption[] = [
+  {
+    id: 1,
+    title: "Offerings",
+    description: "You can give your offering through Interac eTransfer:",
+    email: "rccg.hop@yahoo.com"
+  },
+  {
+    id: 2,
+    title: "Tithes",
+    description: "You can pay your tithes through Interac eTransfer:",
+    email: "rccg.hop@yahoo.com"
+  },
+  {
+    id: 3,
+    title: "Church Building Project",
+    description: "You can contribute to the church building project through Interac eTransfer:",
+    email: "rccghofpeace@gmail.com"
+  },
+  {
+    id: 4,
+    title: "Disclaimer",
+    description: "Kindly note: Currently, all giving is through Interac eTransfer or in-person during service. No giving is done directly through the website."
+  }
+];

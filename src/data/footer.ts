@@ -37,18 +37,13 @@ export const footerLinks: FooterLink[] = [
             {
                 id: 1,
                 header: 'Sunday service',
-                text: '10:00 AM - 11:30 AM'
+                text: '09:30 AM CST'
             },
             {
                 id: 2,
-                header: 'Wednesday Bible Study',
-                text: '19:00 PM - 20:00 PM'
+                header: 'Midweek Service (Every Wednesday)',
+                text: '07:30 PM CST'
             },
-            {
-                id: 3,
-                header: 'Monthly Crossover',
-                text: '23:00 PM - 00:00 PM'
-            }
         ],
         icon: FaRegClock,
         link: ''
@@ -60,12 +55,12 @@ export const footerLinks: FooterLink[] = [
             {
                 id: 1,
                 header: 'Phone',
-                text: '+1 (306)-757-1004'
+                text: '+1 (306) 216-9058'
             },
             {
                 id: 2,
                 header: 'Email',
-                text: 'info@houseofpeace.org'
+                text: 'rccg.hop@yahoo.com'
             }
         ],
         icon: HiOutlineChatBubbleLeftRight,

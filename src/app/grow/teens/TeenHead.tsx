@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import teen from '../../../assets/grow/teen.jpg'
+import teen from '../../../assets/grow/Teenagers.jpg'
 
 function TeenHead() {
   return (
