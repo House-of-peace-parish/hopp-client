@@ -66,7 +66,7 @@ function Navbar() {
 
                 {/* Navigation Links */}
                 <div
-                    className={`md:nav_item grid gap-6 md:static fixed top-0 z-30 h-screen md:h-fit md:w-fit w-[70vw] md:bg-transparent bg-[#3B82F6] md:p-0 p-4 md:text-[#F5F5F5] text-[#F5F5F5] transition-all duration-700 ${openNav ? 'left-0' : '-left-full'
+                    className={`md:nav_item grid gap-6 md:static fixed top-0 z-30 h-screen md:h-fit md:w-fit w-[70vw] md:bg-transparent bg-[#1E5631] md:p-0 p-4 md:text-[#F5F5F5] text-[#F5F5F5] transition-all duration-700 ${openNav ? 'left-0' : '-left-full'
                         }`}
                 >
                     <ul className='md:flex md:items-center md:flex-row flex-col h-full gap-3'>
