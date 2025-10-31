@@ -86,7 +86,7 @@ function Navbar() {
                             <Link href='/live'>Live</Link>
                         </li>
                         <li className='md:nav_item leading-9 font-semibold'>
-                            <Link href='/donate'>Donate</Link>
+                            <Link href='/ministries'>Ministries</Link>
                         </li>
 
                         {/* GROW DROPDOWN */}
