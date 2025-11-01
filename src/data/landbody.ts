@@ -231,7 +231,7 @@ export const quickLinks: QuickLink[] = [
     {
         id: 4,
         title: 'Become a volunteer',
-        link: '/resources/welfare',
+        link: '/resources/volunteer',
         text: 'Learn more',
         icon: MdOutlineVolunteerActivism
     }
