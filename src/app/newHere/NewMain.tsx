@@ -1,4 +1,3 @@
-import MeetPastor from '@/components/growPage/MeetPastor'
 import Connect from '@/components/landpage/Connect'
 import NewGuide from '@/components/landpage/NewGuide'
 import QuickLink from '@/components/landpage/QuickLink'
@@ -10,7 +9,6 @@ function NewMain() {
       <NewGuide />
       <Connect />
       <QuickLink />
-      <MeetPastor />
     </div>
   )
 }
