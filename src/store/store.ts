@@ -3,7 +3,7 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'
 import contactApiSlice from './contactStore/contactApiSlice'
 import welfareApiSlice from './welfareStore/welfareApiSlice'
-import subscriberApiSlice from './subscriberStore/subscriberApiSlice'
+import volunteerApiSlice from './volunteerStore/volunteerApiSlice'
 
 const persistConfig = {
     key: 'root',
@@ -13,7 +13,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
     contact: contactApiSlice,
     welfare: welfareApiSlice,
-    subscriber: subscriberApiSlice
+    volunteer: volunteerApiSlice
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

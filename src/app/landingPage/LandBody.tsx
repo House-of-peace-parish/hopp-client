@@ -1,5 +1,4 @@
 import AboutUs from '@/components/landpage/AboutUs'
-import CommunityInit from '@/components/landpage/CommunityInit'
 import Connect from '@/components/landpage/Connect'
 import CoreMin from '@/components/landpage/CoreMin'
 import Giving from '@/components/landpage/Giving'
@@ -18,7 +17,6 @@ function LandBody() {
       <Giving />
       <Connect />
       <CoreMin />
-      <CommunityInit />
     </div>
   )
 }

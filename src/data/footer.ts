@@ -36,12 +36,12 @@ export const footerLinks: FooterLink[] = [
         list: [
             {
                 id: 1,
-                header: 'Sunday service',
+                header: 'Sunday service:',
                 text: '09:30 AM CST'
             },
             {
                 id: 2,
-                header: 'Midweek Service (Every Wednesday)',
+                header: 'Midweek Service (Every Wednesday):',
                 text: '07:30 PM CST'
             },
         ],
@@ -54,12 +54,12 @@ export const footerLinks: FooterLink[] = [
         list: [
             {
                 id: 1,
-                header: 'Phone',
+                header: 'Phone:',
                 text: '+1 (306) 216-9058'
             },
             {
                 id: 2,
-                header: 'Email',
+                header: 'Email:',
                 text: 'rccg.hop@yahoo.com'
             }
         ],

@@ -11,7 +11,7 @@ function BroadcastSchedule() {
             </div>
             <div className='md:w-[50%] w-full flex flex-col'>
                 <h4 data-aos="fade-up-left" className='text-[#A42A2A] text-[20px]'>{broadCastSchedule.title}</h4>
-                <h3 data-aos="fade-up-left" className='text-[40px] font-semibold'>Raising Kingdom Stars ...</h3>
+                <h3 data-aos="fade-up-left" className='text-[40px] font-semibold'>Sunday Service Live ...</h3>
 
                 <div className='flex flex-col gap-2 mt-4'>
                     {

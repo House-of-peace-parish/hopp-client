@@ -3,6 +3,7 @@ import React from 'react'
 import ContactHead from './ContactHead'
 import ContactBody from './ContactBody'
 import Footer from '@/components/footer/Footer'
+import { ToastContainer } from 'react-toastify'
 
 function page() {
   return (
@@ -11,6 +12,7 @@ function page() {
         <ContactHead />
         <ContactBody />
         <Footer />
+        <ToastContainer />
     </>
   )
 }

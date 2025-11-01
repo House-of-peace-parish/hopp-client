@@ -26,12 +26,11 @@ function Generous() {
                             : id % 2 === 0
                                 ? 'fade-up-left'
                                 : 'fade-up-right'
-                    } className='w-full h-fit relative rounded-2xl overflow-hidden' key={item.id}>
-                        <div className='w-full h-[450px] md:h-[500px]'>
-                            <Image className='w-full h-full object-cover' src={item.image} alt='' />
+                    } className='w-full h-fit relative rounded-2xl overflow-hidden bg-[#1E5631]' key={item.id}>
+                        <div className='w-full h-[300px] md:h-[500px]'>
                         </div>
                         <div className='absolute top-0 left-0 w-full h-full bg-black/30 text-[#F5F5F5] flex flex-col'>
-                            <div className='mt-auto h-fit w-full p-2'>
+                            <div className='h-full flex flex-col justify-center w-full p-6'>
                                 <div className='border-b-2 border-b-[#5A9BD5] w-full'>
                                     <h4 data-aos="fade-up" className='font-semibold w-fit text-[20px]'>{item.title}</h4>
                                 </div>

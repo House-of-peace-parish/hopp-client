@@ -50,6 +50,30 @@ export interface WelfareResponsePayload {
     data?: WelfareType | WelfareType[];
 }
 
+// Welfare interfaces
+export interface VolunteerType {
+    _id: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string,
+    volunteer: string;
+    createdAt: any;
+}
+
+export interface VolunteerData {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string,
+    volunteer: string;
+}
+
+export interface VolunteerResponsePayload {
+    message?: string;
+    data?: VolunteerType | VolunteerType[];
+}
+
 // Subscriber interfaces
 export interface SubscriberType {
     _id: string;

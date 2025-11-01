@@ -10,7 +10,7 @@ function AboutUs() {
                 <Image style={{ boxShadow: '15px 15px 8px #5A9BD5' }} className='w-full md:w-[800px] h-[400px] md:h-[550px] rounded-2xl' src={pastors} alt='' />
             </div>
             <div className='md:w-[50%] w-full flex flex-col'>
-                <h4 data-aos="fade-up-left" className='text-[#A42A2A] text-[20px]'>Pastor Tope Olanipekun and Caroline Olanipekun</h4>
+                <h4 data-aos="fade-up-left" className='text-[#A42A2A] text-[20px]'>Pastor Tope Olanipekun and Pastor Mrs Caroline Olanipekun</h4>
                 <h3 data-aos="fade-up-left" className='text-[40px] font-semibold'>Our Core Values ...</h3>
                 <div className='mt-4'>
                     <h4 data-aos="fade-up-left" className='text-[#A42A2A] text-[20px]'>Our Vision</h4>

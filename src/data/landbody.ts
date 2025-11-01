@@ -26,6 +26,8 @@ import car4 from '../assets/Home/Car4.jpg'
 import car5 from '../assets/Home/Car5.jpg'
 import car6 from '../assets/Home/Car6.jpg'
 
+import newHere2 from '../assets/new/New Here 2.jpg'
+
 interface LandCarousel {
     id: number;
     image: any;
@@ -102,21 +104,21 @@ export const upcomingEvents: Event[] = [
     },
     {
         id: 4,
-        title: "Prayer & Worship Night",
+        title: "Bible Study",
         date: "2024-07-25",
         time: "7:00 PM",
-        location: "Chapel",
-        description: "A night dedicated to prayer, reflection, and uplifting worship music.",
+        location: "1042 Albert st, Regina, Sk",
+        description: "Let's take a moment to deepen our understanding of God's Word together! Join a bible study and grow in faith together",
         image: event4,
         link: ""
     },
     {
         id: 5,
-        title: "Bible Study Series",
-        date: "2024-07-28",
+        title: "Sunday Service",
+        date: "Every Sunday",
         time: "5:00 PM",
-        location: "Room 101",
-        description: "Dive deep into scripture with our weekly interactive Bible study sessions.",
+        location: "1042 Albert st, Regina, Sk",
+        description: "Let us go to His dwelling place; Let us worship at His footstool - Psalm 132:7.",
         image: event5,
         link: ""
     }
@@ -269,12 +271,12 @@ export const coreMinistries = [
 ]
 
 export const newGuide = {
-    title: 'The Regina newcomer\'s handbook by HOPP',
-    header: 'Your Guide to a Smooth Start in Regina',
-    desc: 'Starting fresh in a new city can feel overwhelming, but this handbook is here to make your transition easier. Packed with practical tips, it helps you navigate life in Regina—from finding childcare and job opportunities to accessing community services and local resources. Consider it your go-to guide for everything you need to settle confidently and thrive in your new home.',
+    title: 'The Regina newcomer\'s handbook by HOP',
+    header: 'Your Guide to Starting Life in Regina',
+    desc: 'Moving to a new city can be both exciting and challenging, but this guide is designed to make your transition smoother. Filled with helpful information and practical advice, it will walk you through everything from finding childcare and employment to connecting with community programs and local resources. Think of it as your essential companion to help you settle in comfortably and start building a successful life in Regina.',
     link: 'https://www.regina.ca/about-regina/moving-to-regina/ ',
-    img: handbook,
-    text: 'Download Handbook'
+    img: newHere2,
+    text: 'Newcomers’ Guide'
 }
 
 interface Community {
@@ -377,7 +379,7 @@ export const connectLink: Connect[] = [
         header: 'Connect and Grow Together',
         text: 'Connect now',
         image: '',
-        link: '/resources/prayer'
+        link: '/resources/contact'
     },
     {
         id: 2,
@@ -385,7 +387,7 @@ export const connectLink: Connect[] = [
         header: 'Serve with Us',
         text: 'Get involved',
         image: '',
-        link: '/resources/welfare'
+        link: '/resources/volunteer'
     }
 ]
 

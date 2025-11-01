@@ -5,7 +5,7 @@ import axios from 'axios'
 // Create a new request type
 export const postContact = createAsyncThunk<ContactResponsePayload, ContactData>('contact/postContact', async (contactData: ContactData) => {
     try {
-        const response = await axios.post<ContactResponsePayload>(`${process.env.NEXT_PUBLIC_API_URL}/create_request`, contactData)
+        const response = await axios.post<ContactResponsePayload>(`https://hopp-server.vercel.app/create_request`, contactData)
         return response.data;
     } catch (error: any) {
         throw error.response?.data.message;
@@ -15,7 +15,7 @@ export const postContact = createAsyncThunk<ContactResponsePayload, ContactData>
 // Fetch all request base on type
 export const fetchContact = createAsyncThunk<ContactResponsePayload, string>('contact/fetchContact', async (reqType: string) => {
     try {
-        const response = await axios.get<ContactResponsePayload>(`${process.env.NEXT_PUBLIC_API_URL}/fetch_request/${reqType}`)
+        const response = await axios.get<ContactResponsePayload>(`https://hopp-server.vercel.app/fetch_request/${reqType}`)
         return response.data;
     } catch (error: any) {
         throw error.response?.data.message;

@@ -1,7 +1,7 @@
 import kids from '../assets/grow/kids.jpg';
 import male from '../assets/grow/male.jpg'
 import female from '../assets/grow/female.jpg'
-import families from '../assets/gallery/families.jpg'
+import car3 from '../assets/Home/Car3.jpg'
 import youthP from '../assets/gallery/youthP.jpg'
 
 interface TeenVision {
@@ -20,13 +20,13 @@ interface Teen {
 }
 
 export const teen: Teen = {
-    title: 'Unique Teenagers',
+    title: 'HOP Teens',
     header1: 'Who we are',
     para1: `Unique Teenagers is a vibrant and inclusive Christian youth group dedicated to empowering teenagers to embrace their unique identity in Christ.
 With a passionate team of dedicated young leaders, the group has created an environment where young teens can explore their faith, connect with others, and
 grow in their relationship with God.`,
     header2: 'Our Vision',
-    image: families,
+    image: car3,
     para2: [
         {
             id: 1,
@@ -77,23 +77,37 @@ export const youth: Youth = {
     para4: 'YOUTH BIBLE STUDY is a weekly gathering that provides young individuals with an opportunity to delve deeper into the teachings of the Bible, explore their faith, and build a strong foundation for their spiritual journey. Held every Wednesday evening, this event is designed to create an interactive and engaging environment where youth can learn, discuss, and grow together in their understanding of scripture.'
 }
 
-export const meetPastor = {
-    header: 'Meet Our Pastors',
-    title: 'Helping us grow the Youth Ministry are these amazing pastors and leaders', 
+export interface MeetData {
+    header: string;
+    pastors: {
+        id: number;
+        bio: string;
+    }[]
+}
+
+export const meetPastor: MeetData = {
+    header: 'Growth for Teens',
     pastors: [
         {
             id: 1,
-            name: 'Pastor John Doe',
-            role: 'Youth Pastor',
-            bio: 'Pastor John has been leading the youth ministry for over a decade, inspiring young hearts to embrace their faith and live purposefully.',
-            image: male
+            bio: 'Our dedicated Sunday School section for teens helps them grow in Christ. Join Sunday School every Sunday by 9:30am CST.',
         },
         {
             id: 2,
-            name: 'Sarah Smith',
-            role: 'Youth Leader',
-            bio: 'Sarah is passionate about mentoring teenagers and creating a supportive community where they can thrive spiritually and socially.',
-            image: female
+            bio: 'Our Midweek Service is held every Wednesday evening. Join us every Wednesday by 7:30pm CST to reflect on the Word, ask questions, have a discussion and grow together as a community.',
+        }
+    ]
+};
+export const meetPastor2: MeetData = {
+    header: 'Growth for Youths',
+    pastors: [
+        {
+            id: 1,
+            bio: 'Your Sunday Service is not complete without Sunday School. Sunday School starts by 9:30am CST every Sunday and is a chance to experience growth through discussions guided by the RCCG Sunday School manual',
+        },
+        {
+            id: 2,
+            bio: 'Join us every Wednesday evening by 7:30pm CST for our Midweek Service. It is an opportunity to study the Word, meditate, ask questions, have a discussion and grow together as a community.',
         }
     ]
 };

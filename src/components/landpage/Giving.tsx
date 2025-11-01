@@ -1,13 +1,11 @@
 'use client';
 
 import { fundChurch, givingOptions } from '@/data/landbody'
-import Image from 'next/image'
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import { EffectCoverflow, Autoplay } from "swiper/modules";
-import Link from 'next/link';
+import { EffectCoverflow, Autoplay, Pagination, Navigation } from "swiper/modules";
 
 function Giving() {
     return (
@@ -18,9 +16,13 @@ function Giving() {
             <div className='w-full mt-10'>
                 <Swiper
                     effect={'coverflow'}
-                    grabCursor={true}
+                    grabCursor={false}
                     centeredSlides={true}
                     loop={true}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    navigation={true}
                     autoplay={{
                         delay: 3000,
                         pauseOnMouseEnter: true,
@@ -56,7 +58,7 @@ function Giving() {
                             slidesPerView: 2,
                         },
                     }}
-                    modules={[EffectCoverflow, Autoplay]}
+                    modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
                     className="w-[95%] mx-auto max-w-[1400px]"
                 >
                     {givingOptions.map((item) => (

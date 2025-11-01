@@ -28,7 +28,7 @@ function Footer() {
                                 {
                                     list.map(({ id, header, text }) => (
                                         <div className='flex items-center gap-2 text-[14px]' key={id}>
-                                            <h4 className='font-semibold'>{header}: </h4>
+                                            <h4 className='font-semibold'>{header}</h4>
                                             <p>{text}</p>
                                         </div>
                                     ))

@@ -8,7 +8,7 @@ export const postWelfare = createAsyncThunk<WelfareResponsePayload, WelfareData>
   async (welfareData: WelfareData) => {
     try {
       const response = await axios.post<WelfareResponsePayload>(
-        `${process.env.NEXT_PUBLIC_API_URL}/create_welfare`,
+        `https://hopp-server.vercel.app/create_welfare`,
         welfareData
       );
       return response.data;
